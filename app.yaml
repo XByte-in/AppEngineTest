@@ -11,6 +11,4 @@ automatic_scaling:
   min_pending_latency: 1.7s
   max_pending_latency: 14.6s
 
-default_expiration: "1d"
-
 entrypoint: gunicorn -b :8080 -w 2 main:app
